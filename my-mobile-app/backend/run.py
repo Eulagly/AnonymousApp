@@ -1,8 +1,8 @@
-from app import create_app
+from .app import create_app
 
 # Create the Flask app instance
 app = create_app()
 
 # Run the development server
-if __name__ == "__main__":
+def run():
     app.run(debug=True)
