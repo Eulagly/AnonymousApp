@@ -1,11 +1,11 @@
 from flask import Flask
 
 
-def create_app():
+def create_app(conn):
     app = Flask(__name__)
 
     # Configure app settings (e.g., app.config)
-    app.config["SECRET_KEY"] = "your-secret-key"
+    app.config["SECRET_KEY"] = "space"
 
     # Import and register blueprints
     from .routes.auth_routes import auth_routes
